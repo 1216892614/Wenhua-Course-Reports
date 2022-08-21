@@ -1,0 +1,64 @@
+\begin{titlepage}
+    \newgeometry{left=1cm,right=1.8cm,top=0cm,bottom=0cm}
+    \begin{table}
+        \rotatebox{90}{
+            \begin{minipage}[c][0.2\linewidth][t]{\textheight}
+                \begin{center}
+                    \Large{
+                        学号: \dlmu[4cm]{\studentid}
+                        专业: \dlmu[4cm]{\studentmajor}
+                        班级: \dlmu[4cm]{\studentclass}
+                        姓名: \dlmu[4cm]{\studentname}
+                    }\\[1ex]
+                    {\renewcommand{\CJKglue}{\hskip 25pt} \fontsize{12pt}{0pt}{装订线内请勿答题}}\\[-1ex]
+                    \hdashrule[0.3ex]{0.99\textwidth}{0.3pt}{1.5mm}
+                \end{center}
+            \end{minipage}
+        }
+        \begin{minipage}[c][1.87\textheight][t]{0.8\linewidth}
+            \begin{center}
+                {\renewcommand{\CJKglue}{\hskip 25pt} \textsf{\fontsize{37pt}{0pt}{
+                            文  华  学  院
+                        }}}\\[4ex]
+                {\fontsize{17pt}{0pt} \textsf{
+                {\academicyear}学年度第{\zhnumber{\semester}}学期《{\coursename}课程设计》
+                }}\\[4ex]
+                {\bfseries\fontsize{17pt}{0pt} \textsf{
+                考查试卷（{\abtext}卷）
+                }}\\[-4ex]
+                \begin{large}
+                    $$
+                        \begin{aligned}
+                             & \mbox{课程性质：{\compulsory}} & \mbox{使用范围：{\extent}} \\
+                             & \mbox{考核时间：\texttime}     &                       \\
+                        \end{aligned}
+                    $$
+                \end{large}
+                \setlength{\tabcolsep}{15pt}{
+                    \begingroup
+                    \centering
+                    \setlength{\tabcolsep}{7pt}
+                    \renewcommand\arraystretch{2}
+                    \begin{tabular}{*{7}{|m{45pt}<{\centering}}|}
+                        \hline
+                        \multirow{2}{*}{\tabincell{c}{    \\[-4ex]考试类型}} & 论文 & 大作业 & 调研报告 & 其他 & 总分 & \tabincell{c}{ \\[2ex] } \\
+                        \cline{2-7}
+                         & ~ & ~ & ~ & √ & \tabincell{c}{ \\[-9ex]阅卷老师\\[-4ex]签名} &    \\
+                        \hline
+                    \end{tabular}
+                    \endgroup
+                }
+                \vspace{5ex}
+            \end{center}
+            {\renewcommand{\CJKglue}{\hskip 15pt} \textsf{
+                试  题：
+            }} \input{试题.tex}
+            \vspace{5ex}
+
+            {\renewcommand{\CJKglue}{\hskip 15pt} \textsf{
+                    要  求：
+                }}\input{要求.tex}
+        \end{minipage}
+    \end{table}
+    \restoregeometry
+\end{titlepage}

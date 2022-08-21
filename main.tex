@@ -1,0 +1,65 @@
+\documentclass[UTF8]{ctexart}
+\title{CRB{\large .ds}\\{\Large Core Rule Book of Dice Shock}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%个人信息%%%%%%%%%%%%%%%%%%
+\newcommand{\studentname}{Nerd}%姓名
+\newcommand{\studentid}{id}%学号
+\newcommand{\studentclass}{软件工程}%班级
+\newcommand{\studentmajor}{1902}%专业
+\newcommand{\faculties}{信息技术科学}%院系
+%%%%%%%%%%%%%%%%%课程信息%%%%%%%%%%%%%%%%%%
+\newcommand{\coursename}{Course name}%课程名称
+\newcommand{\teachername}{Teacher name}%指导老师
+\newcommand{\academicyear}{2021～2022}%学年
+\newcommand{\semester}{1}%学期
+\newcommand{\abtext}{A}%AB卷
+\newcommand{\compulsory}{必修}%课程性质
+\newcommand{\extent}{本科}%使用范围
+\newcommand{\texttime}{2021年9月27日}%考核时间
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%设置页边距
+\usepackage{geometry}
+\geometry{left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm}
+%引入 jpg
+\usepackage{graphicx}
+% %引入 Markdown
+% \usepackage{markdown}
+%数字转中文
+\usepackage{zhnumber}
+%下划线
+\usepackage{ulem}
+%表格
+\usepackage{array}
+%列表
+\usepackage{enumitem}
+%压缩列表行间距
+\usepackage{paralist}
+%表格内换行
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+%竖排文本
+\usepackage{rotating}
+%合并单元格
+\usepackage{multirow}
+%虚线
+\usepackage{dashrule}
+%aligned
+\usepackage{amsmath}
+%定长下划线
+\makeatletter
+\newcommand\dlmu[2][4cm]{\hskip1pt\underline{\hb@xt@ #1{\hss#2\hss}}\hskip3pt}
+\makeatother
+
+\author{Nerd}
+\date{\today}
+
+\begin{document}
+
+%综述页
+\include{src/reviewpage.tex}
+%标题页
+\include{src/main_titlepage.tex}
+
+\end{document}

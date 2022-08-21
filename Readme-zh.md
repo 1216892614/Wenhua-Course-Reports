@@ -1,4 +1,4 @@
-[中文说明](./Readme-zh.md)
+[README](./Readme.md)
 # 如何使用此模板?
 
 1. 在 `main.tex` 文件里修改基本信息.
